@@ -10,4 +10,5 @@ int main()
 	else {
 		cout << "No result" << endl;
 	}
+	return 0;
 }
