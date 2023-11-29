@@ -14,6 +14,6 @@ int main() {
 		}
 		stars += 2;
 		cout << endl;
-		return 0;
 	}
+	return 0;
 }
