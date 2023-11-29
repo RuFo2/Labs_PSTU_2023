@@ -13,4 +13,5 @@ int main()
 	else {
 		cout << a / 10 << endl;
 	}
+	return 0;
 }
