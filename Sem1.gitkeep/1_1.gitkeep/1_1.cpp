@@ -13,4 +13,5 @@ int main() {
 		max = c;
 	}
 	cout << max << endl;
+	return 0;
 }
