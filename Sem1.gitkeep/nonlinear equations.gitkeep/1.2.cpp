@@ -3,7 +3,7 @@
 // f''(x) = 4/x^2;
 // [2, 4]
 
-//Метод итераций
+//Метод Ньютона
 #include <iostream>
 #include <cmath>
 using namespace std;
