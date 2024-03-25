@@ -11,10 +11,10 @@
 # Код программы
 ```cpp
 #include <iostream>
-
 using namespace std;
 
-int cntEl(string str){
+int cntEl(string str)
+{
     int cnt = 0;
     char j = str[0];
     for (int i = 0; i <  str.size(); i++) {
@@ -30,7 +30,8 @@ int cntEl(string str){
     return cnt;
 }
 
-int cntEl(int arr[], int size){
+int cntEl(int arr[], int size)
+{
     int cnt = 0;
     for (int i = 0; i < size; i++) {
         if (arr[i] < 0) {
