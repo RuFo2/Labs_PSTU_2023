@@ -61,7 +61,7 @@ void MainWindow::on_pushButton_6_clicked()
     a->start();
     ui->textBrowser->append(a->getAd());
     ui->textBrowser->append("Стоимость: " + QString::number(a->getP()));
-    ui->textBrowser->append(a->getS());
+    ui->textBrowser->append("Площадь " + a->getS());
     ui->textBrowser->setStyleSheet("font: 14 px");
 
     a->print();
