@@ -21,7 +21,7 @@
 неудовлетворительной оценке.
 
 # UML-диаграмма
--
+![](https://sun9-54.userapi.com/impg/32DqZun0PqZckprukJlXujeqhah-XxdEIFrHzQ/sODnmAL0KL0.jpg?size=744x410&quality=96&sign=602adc12c230d2effe5a6c7b6038bf10&type=album)
 
 # Код программы
 ## main
