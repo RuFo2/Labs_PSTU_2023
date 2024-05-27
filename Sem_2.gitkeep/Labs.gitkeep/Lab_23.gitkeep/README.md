@@ -17,7 +17,7 @@
 неудовлетворительной оценке.
 
 # UML-диаграмма
-![](https://sun9-4.userapi.com/impg/98eXHf-ASpord-X0toQyTYpt4vt-w0qwFjAKOQ/zQtURLUoqos.jpg?size=564x410&quality=96&sign=767b7ed73fd3323ff53b4ab2a679f0c7&type=album)
+![](https://sun9-67.userapi.com/impg/K_HGTe7Q8WSrIXcuPnJkpSFkPLHw8M4H-ms6KQ/vmf9FWTAuYY.jpg?size=1013x410&quality=96&sign=b57ef3b7a3e37553b448d6ea3a3dddea&type=album)
 
 # Код программы
 ## main
@@ -25,17 +25,20 @@
 #include <iostream>
 #include "Person.h"
 #include "Student.h"
+#include "Vector.h"
 using namespace std;
 int main()
 {
-	Person One("pupa", 56);
-	Student Two("lupa", 32, "Math", 2);
+    Vector v(5);
+    Person one;
+    cin >> one;
+    Student two;
+    cin >> two;
 
-	cin >> One;
-	cout << One;
+    v.add(&one);
+    v.add(&two);
 
-	cin >> Two;
-	cout << Two;
+    cout << v;
 	return 0;
 }
 ```
@@ -46,7 +49,14 @@ int main()
 #include <string>
 using namespace std;
 
-class Person {
+class Object {
+public:
+    Object() {};
+    ~Object() {};
+    virtual void Show() = 0;
+};
+
+class Person : public Object {
 protected:
     string name;
     int age;
@@ -152,4 +162,36 @@ istream& operator >> (istream& in, Student& a) {
     cout << "Mark: "; in >> a.mark;
     return in;
 }
+```
+##Vector.h
+```cpp
+#pragma once
+#include <iostream>
+#include "Person.h"
+
+using namespace std;
+
+class Vector {
+    Object** head;
+    int size;
+    int curIndx;
+
+public:
+    Vector() { head = 0; size = 0; curIndx = 0; };
+    Vector(int n) { head = new Object * [n]; curIndx = 0; size = n; };
+
+    void add(Object* p) { if (curIndx < size) head[curIndx++] = p; };
+
+    friend ostream& operator <<(ostream& out, const Vector&);
+
+    ~Vector() { if (head != 0) delete[] head; head = 0; };
+
+};
+
+ostream& operator <<(ostream& out, const Vector& v) {
+    if (v.size == 0) out << "Empty" << endl;
+    Object** p = v.head;
+    for (int i(0); i < v.curIndx; i++) (*p++)->Show();
+    return out;
+};
 ```
