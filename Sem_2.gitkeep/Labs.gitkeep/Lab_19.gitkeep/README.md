@@ -10,7 +10,7 @@
 постоянное отношение r. Реализовать метод element(int j) -вычисление j-го элемента
 прогрессии.
 # Блок-схема
--
+![](https://sun9-31.userapi.com/impg/xDfgL3qvo5oAzfaXVNn6PEsUAS9NacMDnEk3gw/rauZAQhXRkk.jpg?size=204x256&quality=96&sign=86844ba4fe8f8998a826877df0b40bb4&type=album)
 # Код программы
 ```cpp
 #include <iostream>
