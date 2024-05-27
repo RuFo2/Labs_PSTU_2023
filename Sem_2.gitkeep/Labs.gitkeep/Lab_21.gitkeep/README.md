@@ -22,7 +22,7 @@
 
 
 # UML-диаграмма
--
+![](https://sun9-72.userapi.com/impg/Qd-BqeXFmlBwWBRLP2ytverLtGHfUBU3rDRF2Q/8G-1jFLYAIM.jpg?size=204x418&quality=96&sign=67d6a431275343dc7d2a14dee2aafe36&type=album)
 
 # Код программы
 ```cpp
