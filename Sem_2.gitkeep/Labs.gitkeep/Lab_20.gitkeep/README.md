@@ -15,7 +15,7 @@
 - Премия (% от оклада) - int
 
 # UML-диаграмма
--
+![](https://sun9-54.userapi.com/impg/y16WZjob68e9RBzoNYy19Dh6wyHtulH99lh03w/FPfhBHlqJ7s.jpg?size=324x441&quality=96&sign=74a2e12af3adc6dbdc305bd457f59362&type=album)
 
 # Код программы
 ```cpp
